@@ -1,0 +1,57 @@
+body{
+    margin:0;
+}
+
+input[type=text]{
+    width: calc(100% - 50px);
+    margin: 8px 0px;
+    padding: 14px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+button{
+    background-color: lightblue;
+    color: black;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+#button.hover{
+    background-color: aquamarine;
+}
+
+#buttonContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#loadLocal{
+    background-color: aliceblue;
+}
+
+#loadLocal:hover{
+    background-color: blanchedalmond;
+}
+
+#deleteLocal{
+    background-color: azure;
+}
+#deleteLocal:hover{
+    background-color: lavender;
+}
+
+#dataContainer{
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media only screen and(max-width:600px){
+    #buttonContainer{
+        flex-direction: column;
+    }
+}
