@@ -1,5 +1,5 @@
 function updateClock(){
-  var today = new Date();
+  var date = new Date();
   var hr = date.getHours(); 
   var min = date.getMinutes(); 
   var sec = date.getSeconds(); 
@@ -7,8 +7,19 @@ function updateClock(){
   min = checkTime(min);
   sec = checkTime(sec);
   document.getElementById("Clock").innerHTML = hr + " : " + min + " : " + sec;
-  var time = setTimeout(function(){ startTime() }, 500);
+
+  var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    var curWeekDay = days[today.getDay()];
+    var curDay = today.getDate();
+    var curMonth = months[today.getMonth()];
+    var curYear = today.getFullYear();
+    var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
+    document.getElementById("date").innerHTML = date;
+    
+    var time = setTimeout(function(){ startTime() }, 500);
 }
+
 function checkTime(i) {
   if (i < 10) {
       i = "0" + i;
