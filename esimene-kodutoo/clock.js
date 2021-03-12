@@ -17,7 +17,6 @@ function updateClock(){
     var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
     document.getElementById("date").innerHTML = date;
     
-    var time = setTimeout(function(){ updateClock() }, 500);
 }
 
 function checkTime(i) {
