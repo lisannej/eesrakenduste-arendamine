@@ -39,16 +39,15 @@ function checkTime(i) {
 
   updateClock();
 
-  var bgbutton = document.querySelector("bgbutton");
+var bgbutton = document.querySelector("bgbutton");
 
 button.addEventListener("click", function() {
     const curColour = document.body.style.backgroundColor;
 
-    if (curColour === 'black') {
+    if (curColour == 'black') {
         document.body.style.backgroundColor = 'white';
         document.body.style.Color = 'white';
-    }
-    else {
+    } else {
         document.body.style.backgroundColor = 'black';
     }
 });
