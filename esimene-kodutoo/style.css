@@ -16,7 +16,13 @@
   text-shadow: 0px 0px 1px #fff;
   color: #fff;
 }
-
+#Clock:hover {
+  background-color: #000000;
+  font-family: 'Anton', sans-serif;
+  font-size:100px;
+  text-shadow: 0px 0px 5px rgb(184, 180, 180);
+  color: #fff;
+}
 #date {
   letter-spacing:10px;
   font-size:25px;
