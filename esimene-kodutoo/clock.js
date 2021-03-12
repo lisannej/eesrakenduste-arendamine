@@ -1,4 +1,5 @@
 let guestName = prompt('Palun sisesta nimi.');
+let bgbutton = document.querySelector('#html');
 
 function updateClock(){
   var today = new Date();
@@ -39,12 +40,12 @@ function checkTime(i) {
 
   updateClock();
 
-  var bgbutton = document.getElementById('bgbutton'),
-    colors = ['white' ,'black'];
+  bgbutton.addEventListener('click', ChangeColor);
 
-bgbutton.onclick = function () {
-    color = colors.shift();
-    colors.push(color);
-
-    bgbutton.style.backgroundColor = color;
-};
+  function ChangeColor(){
+    if(html.style.backgroundColor == 'black'){
+      html.style.backgroundColor = 'white';
+    } else {
+      html.style.backgroundColor == 'black';
+    }
+  }
