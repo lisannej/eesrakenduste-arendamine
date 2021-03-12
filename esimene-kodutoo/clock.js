@@ -1,4 +1,5 @@
 function greeting(){
+  //var greetings = "";
   if (hr < 12){
     greetings = "Good Morning! ";
   } else if (12<= hr < 18) {
@@ -6,10 +7,9 @@ function greeting(){
   } else {
     greetings = "Good Evening! ";
   }
+  document.getElementById("greeting").innerHTML = greetings ;
 }
 
-
-document.getElementById("greeting").innerHTML = greetings ;
 
 function updateClock(){
   var today = new Date();
