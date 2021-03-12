@@ -39,11 +39,12 @@ function checkTime(i) {
 
   updateClock();
   
-  function ChangeColor(){  
-    if (document.getElementById('bgbutton').style.backgroundColor == 'Black'){
-      document.getElementById('bgbutton').style.backgroundColor = 'White';
-    } else {
-      document.getElementById('bgbutton').style.backgroundColor = 'Black';
+  var bgbutton = document.getElementById('bgbutton'),
+      colors = ['black', 'white'];
 
-    }
-  }
+  bgbutton.onclick = function () {
+      color = colors.shift();
+      colors.push(color);
+
+      bgbutton.style.backgroundColor = color;
+  };
