@@ -13,7 +13,7 @@ function updateClock(){
     } else {
       greetings = "Good Evening ";
     }
-    document.getElementById("greeting").innerHTML = greetings +", " + guestname + " !";
+    document.getElementById("greeting").innerHTML = greetings +", " + guestName + " !";
   min = checkTime(min);
   sec = checkTime(sec);
   document.getElementById("Clock").innerHTML = hr + " : " + min + " : " + sec;
