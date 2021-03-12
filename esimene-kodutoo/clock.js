@@ -30,9 +30,6 @@ function updateClock(){
     var time = setTimeout(function(){ updateClock() }, 500);
 }
 
-
-
-
 function checkTime(i) {
   if (i < 10) {
       i = "0" + i;
