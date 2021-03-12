@@ -1,8 +1,8 @@
 function updateClock(){
-  var date = new Date();
-  var hr = date.getHours(); 
-  var min = date.getMinutes(); 
-  var sec = date.getSeconds(); 
+  var today = new Date();
+  var hr = today.getHours(); 
+  var min = today.getMinutes(); 
+  var sec = today.getSeconds(); 
 
   min = checkTime(min);
   sec = checkTime(sec);
@@ -17,7 +17,7 @@ function updateClock(){
     var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
     document.getElementById("date").innerHTML = date;
     
-    var time = setTimeout(function(){ startTime() }, 500);
+    var time = setTimeout(function(){ updateClock() }, 500);
 }
 
 function checkTime(i) {

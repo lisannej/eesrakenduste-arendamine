@@ -7,11 +7,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
+    <script src= "clock.js"></script>
     
 </head>
-<body>
-    <div id="Clock" class="clock" onload="updateClock()"></div>
-    <script src= "clock.js"></script>
+<body onload="updateClock()">
+    <div id="clockdate">
+    <div class="clockdate-wrapper">
+    <div id="Clock"></div>
+    <div id="date"></div>
+    </div>
+    </div>
+    
 </body>
 </html>
