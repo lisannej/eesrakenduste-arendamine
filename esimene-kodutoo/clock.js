@@ -12,11 +12,11 @@ function updateClock(){
   document.getElementById("Clock").innerText = time;
   document.getElementById("Clock").textContent = time;
   
-  setTimeout(showTime, 1000);
+  setTimeout(updateClock, 1000);
   
 }
 
-showTime();
+updateClock();
 function updateTextSize() {
   for (var i = 0; 3 > i; i++) {  // Iterate for better better convergence
     curFontSize *= targetWidth / (textElem.offsetWidth / textElem.parentNode.offsetWidth);
