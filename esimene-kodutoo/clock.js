@@ -1,5 +1,17 @@
 let guestName = prompt('Palun sisesta nimi.');
 
+var bgbutton = document.querySelector("bgbutton");
+
+bgbutton.addEventListener("click", function() {
+    const curColour = document.body.style.backgroundColor;
+
+    if (curColour === 'black') {
+        document.body.style.backgroundColor = "red";
+    }
+    else {
+        document.body.style.backgroundColor = "black";
+    }
+});
 
 function updateClock(){
   var today = new Date();
@@ -40,15 +52,4 @@ function checkTime(i) {
 
   updateClock();
 
-  var bgbutton = document.querySelector("bgbutton");
-
-bgbutton.addEventListener("click", function() {
-    const curColour = document.body.style.backgroundColor;
-
-    if (curColour === 'black') {
-        document.body.style.backgroundColor = "red";
-    }
-    else {
-        document.body.style.backgroundColor = "black";
-    }
-});
+  
