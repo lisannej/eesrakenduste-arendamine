@@ -34,9 +34,15 @@
   font-family:arial,sans-serif;
   color:#fff;
 }
-html{
+.light{
+  background-color: white;
+  color: black;
+}
+.dark{
   background-color: black;
-  color: darkgray;
+  color: white;
+}
+html{
   font-size: 14px;
 }
 #bgbutton{
