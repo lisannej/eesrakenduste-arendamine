@@ -39,10 +39,4 @@ function checkTime(i) {
 
   updateClock();
   
-  function white(){
-    body.className='white';
-}
-
-function dark(){
-    body.className='dark';
-}
+  
