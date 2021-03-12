@@ -45,9 +45,10 @@ button.addEventListener("click", function() {
     const curColour = document.body.style.backgroundColor;
 
     if (curColour === 'black') {
-        document.body.style.backgroundColor = "white";
+        document.body.style.backgroundColor = 'white';
+        document.body.style.Color = 'white';
     }
     else {
-        document.body.style.backgroundColor = "black";
+        document.body.style.backgroundColor = 'black';
     }
 });
