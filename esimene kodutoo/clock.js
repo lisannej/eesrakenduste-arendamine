@@ -1,22 +1,23 @@
-function currentTime() {
-    var date = new Date(); /* creating object of Date class */
-    var hour = date.getHours();
-    var min = date.getMinutes();
-    var sec = date.getSeconds();
-    hour = updateTime(hour);
-    min = updateTime(min);
-    sec = updateTime(sec);
-    document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
-      var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+var textElem = document.getElementById("clocktext");
+			var targetWidth = 0.9;  // Proportion of full screen width
+			var curFontSize = 20;  // Do not change
+
+function updateClock() {
+  var d = new Date();
+  var s = "";
+  s += (10 > d.getHours  () ? "0" : "") + d.getHours  () + ":";
+  s += (10 > d.getMinutes() ? "0" : "") + d.getMinutes() + ":";
+  s += (10 > d.getSeconds() ? "0" : "") + d.getSeconds();
+  textElem.textContent = s;
+  setTimeout(updateClock, 1000 - d.getTime() % 1000 + 20);
+}
+
+function updateTextSize() {
+  for (var i = 0; 3 > i; i++) {  // Iterate for better better convergence
+    curFontSize *= targetWidth / (textElem.offsetWidth / textElem.parentNode.offsetWidth);
+    textElem.style.fontSize = curFontSize + "pt";
   }
-  
-  function updateTime(k) {
-    if (k < 10) {
-      return "0" + k;
-    }
-    else {
-      return k;
-    }
-  }
-  
-  currentTime(); /* calling currentTime() function to initiate the process */
+}
+  updateClock();
+	updateTextSize();
+	window.addEventListener("resize", updateTextSize);
