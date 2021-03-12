@@ -1,4 +1,4 @@
-
+let guestName = prompt('Palun sisesta nimi.');
 
 function updateClock(){
   var today = new Date();
@@ -7,13 +7,13 @@ function updateClock(){
   var sec = today.getSeconds(); 
   var greetings = "";
     if (hr < 12){
-      greetings = "Good Morning! ";
+      greetings = "Good Morning ";
     } else if (12<= hr < 18) {
-      greetings = "Good Afternoon! ";
+      greetings = "Good Afternoon ";
     } else {
-      greetings = "Good Evening! ";
+      greetings = "Good Evening ";
     }
-    document.getElementById("greeting").innerHTML = greetings ;
+    document.getElementById("greeting").innerHTML = greetings +", " + guestname + " !";
   min = checkTime(min);
   sec = checkTime(sec);
   document.getElementById("Clock").innerHTML = hr + " : " + min + " : " + sec;
@@ -38,15 +38,3 @@ function checkTime(i) {
 }
 
   updateClock();
-
-  const button = document.querySelector('bgbutton')
-  const body = document.querySelector('body')
-  const colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple']
-  
-  body.style.backgroundColor = 'violet'
-  button.addEventListener('click', changeBackground)
-  
-  function changeBackground(){
-  const colorIndex= parseInt(Math.random()*colors.length)
-  body.style.backgroundColor = colors[colorIndex]
-  }
