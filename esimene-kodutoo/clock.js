@@ -38,4 +38,3 @@ function checkTime(i) {
 }
 
   updateClock();
-	updateTextSize();
