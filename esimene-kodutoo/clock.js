@@ -38,3 +38,13 @@ function checkTime(i) {
 }
 
   updateClock();
+
+  var bgbutton = document.getElementById('bgbutton'),
+    colors = ['white' ,'black'];
+
+bgbutton.onclick = function () {
+    color = colors.shift();
+    colors.push(color);
+
+    bgbutton.style.backgroundColor = color;
+};
