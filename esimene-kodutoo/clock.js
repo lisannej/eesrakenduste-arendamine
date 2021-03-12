@@ -1,8 +1,8 @@
 function updateClock(){
-  var date = new Date();
-  var h = date.getHours(); 
-  var m = date.getMinutes(); 
-  var s = date.getSeconds(); 
+  var today = new Date();
+  var hr = date.getHours(); 
+  var min = date.getMinutes(); 
+  var sec = date.getSeconds(); 
 
   min = checkTime(min);
   sec = checkTime(sec);
