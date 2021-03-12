@@ -6,7 +6,7 @@ function updateClock(){
 
   min = checkTime(min);
   sec = checkTime(sec);
-  document.getElementById("Clock").innerHTML = hr + " : " + min + " : " + sec;
+  document.getElementById("Clock").innerHTML = greetings + "\n" + hr + " : " + min + " : " + sec;
 
   var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -18,6 +18,16 @@ function updateClock(){
     document.getElementById("date").innerHTML = date;
     
     var time = setTimeout(function(){ updateClock() }, 500);
+}
+
+function greeting(){
+  if (hr < 12){
+    greetings = "Good Morning! ";
+  } else if (12<= hr < 18) {
+    greetings = "Good Afternoon! ";
+  } else {
+    greetings = "Good Evening! ";
+  }
 }
 
 function checkTime(i) {
