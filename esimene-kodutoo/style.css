@@ -1,16 +1,17 @@
 
-#clocktext {
+#body {
   background: #000000;
-  font-family: sans-serif;
-  font-weight: bold;
-  color: #FFFFFF;
 }
 
 #clock {
-  display:flex; 
-  height:100%; 
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 60px;
+  font-family:'Anton', sans-serif;;
   margin:0; 
   padding:0; 
-  justify-content:center; 
-  align-items:center;
+  letter-spacing: 7px;
 }

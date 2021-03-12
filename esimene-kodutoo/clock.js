@@ -1,17 +1,22 @@
-var textElem = document.getElementById("clocktext");
-var targetWidth = 0.9;  // Proportion of full screen width
-var curFontSize = 20;  // Do not change
+function updateClock(){
+  var date = new Date();
+  var h = date.getHours(); 
+  var m = date.getMinutes(); 
+  var s = date.getSeconds(); 
 
-function updateClock() {
-  var d = new Date();
-  var s = "";
-  s += (10 > d.getHours  () ? "0" : "") + d.getHours  () + ":";
-  s += (10 > d.getMinutes() ? "0" : "") + d.getMinutes() + ":";
-  s += (10 > d.getSeconds() ? "0" : "") + d.getSeconds();
-  textElem.textContent = s;
-  setTimeout(updateClock, 1000 - d.getTime() % 1000 + 20);
+  h = (h < 10) ? "0" + h : h;
+  m = (m < 10) ? "0" + m : m;
+  s = (s < 10) ? "0" + s : s;
+  
+  var time = h + ":" + m + ":" + s ;
+  document.getElementById("Clock").innerText = time;
+  document.getElementById("Clock").textContent = time;
+  
+  setTimeout(showTime, 1000);
+  
 }
 
+showTime();
 function updateTextSize() {
   for (var i = 0; 3 > i; i++) {  // Iterate for better better convergence
     curFontSize *= targetWidth / (textElem.offsetWidth / textElem.parentNode.offsetWidth);
