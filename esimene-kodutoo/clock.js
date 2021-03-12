@@ -1,6 +1,7 @@
 let guestName = prompt('Palun sisesta nimi.');
 
-var bgbutton = document.querySelector('#bgbutton');
+//ei toota
+/*var bgbutton = document.querySelector('#bgbutton');
 
 bgbutton.addEventListener("click", function() {
     const curColour = document.body.style.backgroundColor;
@@ -11,7 +12,7 @@ bgbutton.addEventListener("click", function() {
     else {
         document.body.style.backgroundColor = "black";
     }
-});
+}); */
 
 function updateClock(){
   var today = new Date();
