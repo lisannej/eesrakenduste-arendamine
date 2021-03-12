@@ -1,6 +1,6 @@
 let guestName = prompt('Palun sisesta nimi.');
 
-var bgbutton = document.querySelector("bgbutton");
+var bgbutton = document.querySelector('#bgbutton');
 
 bgbutton.addEventListener("click", function() {
     const curColour = document.body.style.backgroundColor;
