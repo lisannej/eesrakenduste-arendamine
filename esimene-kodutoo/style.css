@@ -1,12 +1,12 @@
 
-html {
+#clocktext {
   background: #000000;
   font-family: sans-serif;
   font-weight: bold;
   color: #FFFFFF;
 }
 
-body {
+#clock {
   display:flex; 
   height:100%; 
   margin:0; 

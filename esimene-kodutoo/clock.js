@@ -1,6 +1,6 @@
 var textElem = document.getElementById("clocktext");
-			var targetWidth = 0.9;  // Proportion of full screen width
-			var curFontSize = 20;  // Do not change
+var targetWidth = 0.9;  // Proportion of full screen width
+var curFontSize = 20;  // Do not change
 
 function updateClock() {
   var d = new Date();
