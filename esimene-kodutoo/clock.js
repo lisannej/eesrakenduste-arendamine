@@ -5,7 +5,15 @@ function updateClock(){
   var hr = today.getHours(); 
   var min = today.getMinutes(); 
   var sec = today.getSeconds(); 
-
+  var greetings = "";
+    if (hr < 12){
+      greetings = "Good Morning! ";
+    } else if (12<= hr < 18) {
+      greetings = "Good Afternoon! ";
+    } else {
+      greetings = "Good Evening! ";
+    }
+    document.getElementById("greeting").innerHTML = greetings ;
   min = checkTime(min);
   sec = checkTime(sec);
   document.getElementById("Clock").innerHTML = hr + " : " + min + " : " + sec;
@@ -22,17 +30,7 @@ function updateClock(){
     var time = setTimeout(function(){ updateClock() }, 500);
 }
 
-function greeting(){
-  //var greetings = "";
-  if (hr < 12){
-    greetings = "Good Morning! ";
-  } else if (12<= hr < 18) {
-    greetings = "Good Afternoon! ";
-  } else {
-    greetings = "Good Evening! ";
-  }
-  document.getElementById("greeting").innerHTML = greetings ;
-}
+
 
 
 function checkTime(i) {
