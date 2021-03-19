@@ -1,6 +1,6 @@
 let guestName = prompt('Palun sisesta nimi.');
 
-//ei toota
+//ei toota hetkel
 /*var bgbutton = document.querySelector('#bgbutton');
 
 bgbutton.addEventListener("click", function() {
