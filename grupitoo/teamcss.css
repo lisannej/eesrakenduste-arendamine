@@ -1,7 +1,7 @@
 
 .column {
-    float: left;
-    width: 20%;
+    float: center;
+    width: 25%;
     margin-bottom: 16px;
     padding: 0 8px;
   }
