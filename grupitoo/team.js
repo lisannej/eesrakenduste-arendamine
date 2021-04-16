@@ -21,7 +21,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("item");
+    let slides = document.getElementsByClassName("card");
     
     if (n > slides.length) {
       slideIndex = 1
