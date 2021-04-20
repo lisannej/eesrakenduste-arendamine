@@ -48,8 +48,9 @@
   .button:hover {
     background-color: #555;
   }
+  /*white box */
 .slider{
-    width: 50%;
+    width: 55%;
     position: relative;
     margin: auto;
     height: 500px;
