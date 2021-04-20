@@ -56,7 +56,7 @@
 
 .slider .card img {
     object-fit: cover;
-    width: 100%;
+    width: 25%;
     height: 300px;
 }
 
