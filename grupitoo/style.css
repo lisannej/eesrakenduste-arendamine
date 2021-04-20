@@ -12,14 +12,14 @@
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     float: left;
-    width: 50%;
+    width: 90%;
     margin-bottom: 16px;
     padding: 0 8px;
   }
   
   .container {
     padding: 0 16px;
-    width: 50%;
+    width: 100%;
   }
   
 
