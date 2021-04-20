@@ -64,7 +64,7 @@
     cursor: pointer;
     position: absolute;
     top: 50%;
-    width: 50%;
+    width: auto;
     margin-top: -22px;
     padding: 16px;
     color: black;
