@@ -53,6 +53,7 @@
     position: relative;
     margin: auto;
     height: 500px;
+    background-color: black;
 }
 /*changes picture*/
 .slider .card img {
