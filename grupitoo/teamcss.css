@@ -49,14 +49,14 @@
     background-color: #555;
   }
 .slider{
-    max-width: 30%;
+    max-width: 50%;
     position: relative;
     margin: auto;
     height: 300px;
 }
 
 .slider .card img {
-    width: 500px;
+    width: 30%;
     height: 300px;
 }
 
@@ -67,7 +67,7 @@
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: grey;
+    color: black;
     font-weight: bold;
     font-size: 16px;
     transition: 0.6s ease;
