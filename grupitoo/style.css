@@ -60,7 +60,7 @@
 .slider .card img {
     width: 50%;
     height: 50%;
-    position: center;
+    position: relative;
     
 }
 
