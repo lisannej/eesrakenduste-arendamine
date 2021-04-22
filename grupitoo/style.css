@@ -62,8 +62,8 @@
 }
 /*changes picture*/
 .slider .card img {
-    width: 50%;
-    height: 70%;
+    width: 300px;
+    height: 400px;
     display: block;
     padding: 16px;
     margin: auto;
