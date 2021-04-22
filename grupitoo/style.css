@@ -63,6 +63,7 @@
 /*changes picture*/
 .slider .card img {
     width: 300px;
+    height: 400px;
     display: block;
     padding: 50px;
     margin: 20px;
