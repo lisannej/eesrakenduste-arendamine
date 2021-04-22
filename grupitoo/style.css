@@ -69,18 +69,7 @@
     
     
 }
-#Lisanne {
-  width: 300px;
-  height: 500px;
-}
-#Reimo {
-  width: 300px;
-  height: 500px;
-}
-#KarlJanar{
-  width: 300px;
-  height: 500px;
-}
+
 
 .slider .previous, .slider .next {
     cursor: pointer;
