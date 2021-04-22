@@ -1,4 +1,4 @@
-/* Display the columns below each other instead of side by side on small screens 
+  /* Display the columns below each other instead of side by side on small screens 
   @media screen and (max-width: 650px) {
     .column {
       width: 100%;
@@ -12,8 +12,7 @@
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     float: center;
-    width: 500px;
-    height: 500px;
+    width: 100%;
     margin-bottom: 16px;
     padding: 0 8px;
   }
@@ -53,14 +52,14 @@
   /*white box */
 .slider{
     width: 40%;
-    position: fixed;
+    position: relative;
     margin: auto;
     height: 500px;
 }
 /*changes picture*/
 .slider .card img {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;
