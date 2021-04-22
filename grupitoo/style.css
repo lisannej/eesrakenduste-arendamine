@@ -21,7 +21,7 @@
   }
   
   .container {
-    padding-right: 16px;
+    padding-right: 5%;
     /*width: 500px;
     height: 500px; */
     text-align: center;
@@ -37,7 +37,6 @@
   .title {
     color: grey;
     text-align: center;
-    padding-left: 16px;
   }
   
   .button {
