@@ -10,6 +10,8 @@
   body{
     text-align: center;
     width: 90%;
+    background-color: #555;
+    color: beige;
   }
   /* Shadows */
   .card {
