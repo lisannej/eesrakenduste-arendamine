@@ -14,7 +14,8 @@
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     float: center;
-    width: 100%;
+    width: 500px;
+    height: 500px;
     margin-bottom: 16px;
     padding: 0 8px;
   }
