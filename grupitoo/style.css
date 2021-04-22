@@ -22,7 +22,7 @@
   
   .container {
     text-align: left;
-    width: 400px;
+    width: 50%;
     margin: 20px;
   }
   
@@ -56,13 +56,13 @@
   /*white box */
 .slider{
     position: fixed;
-    margin: 500px;
+    margin: auto;
     padding: 16 16px;
 }
 /*changes picture*/
-.card img {
-    width: 300px;
-    height: 400px;
+.slider .card img {
+    width: 50%;
+    height: 70%;
     display: block;
     padding: 16px;
     margin: 20px;
