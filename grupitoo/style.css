@@ -9,6 +9,7 @@
   }*/
   body{
     text-align: center;
+    background-color: #555;
   }
   /* Shadows */
   .card {
@@ -59,15 +60,14 @@
     height: 40%;
     position: fixed;
     margin: 50%;
-    height: 500px;
 }
 /*changes picture*/
 .slider .card img {
     width: 50%;
     height: 50%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 300px;
+    margin-top: 400px;
     
     
 }
