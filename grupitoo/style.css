@@ -56,8 +56,9 @@
   /*white box */
 .slider{
     width: 40%;
+    height: 40%;
     position: fixed;
-    margin: auto;
+    margin: 50%;
     height: 500px;
 }
 /*changes picture*/
