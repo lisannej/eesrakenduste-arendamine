@@ -7,9 +7,8 @@
       display: block;
     }
   }*/
-  .body{
+  body{
     text-align: center;
-    background-color: #555;
   }
   /* Shadows */
   .card {
