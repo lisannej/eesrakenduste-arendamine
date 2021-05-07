@@ -1,5 +1,7 @@
+let displayValue = "0";
+
 const calculator = {
-    displayValue: '00',
+    displayValue: '0',
     firstOperand: null,
     waitingForSecondOperand: false,
     operator: null,
